@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Business Directory | Chamber of Commerce</title>
+  <meta name="description" content="Discover local chamber members and businesses in our community directory.">
+  <meta name="author" content="Derek Nielsen">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Facebook / Open Graph Meta -->
+  <meta property="og:title" content="Chamber of Commerce Business Directory">
+  <meta property="og:description" content="Explore our local chamber members and businesses.">
+  <meta property="og:image" content="https://yourgithubusername.github.io/chamber/images/og-image.jpg">
+  <meta property="og:url" content="https://yourgithubusername.github.io/chamber/directory.html">
+  <meta property="og:type" content="website">
+
+  <!-- Normalize / Reset -->
+  <link rel="stylesheet" href="styles/normalize.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- JavaScript -->
+  <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Member Directory</h2>
+
+    <div class="view-buttons">
+      <button id="grid">Grid</button>
+      <button id="list">List</button>
+    </div>
+
+    <section id="members" class="grid"></section>
+  </main>
+
+  <footer>
+    <p>
+      © <span id="currentyear"></span> Derek Nielsen | WDD 231
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
