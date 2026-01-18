@@ -1,0 +1,10 @@
+@media (min-width: 40rem) {
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #members.grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
