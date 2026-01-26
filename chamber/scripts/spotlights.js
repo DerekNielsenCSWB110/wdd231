@@ -39,4 +39,6 @@ function displaySpotlights(members) {
   });
 }
 
+document.getElementById("lastModified").textContent = document.lastModified;
+
 loadSpotlights();

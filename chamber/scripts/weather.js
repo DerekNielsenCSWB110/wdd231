@@ -36,4 +36,6 @@ function displayWeather(data) {
   day3.textContent = `Day 3: ${forecastDays[2].main.temp.toFixed(0)}°F`;
 }
 
+document.getElementById("lastModified").textContent = document.lastModified;
+
 getWeather();
