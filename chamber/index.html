@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Official Chamber of Commerce home page promoting local business, events, and membership opportunities." />
+  <title>Chamber of Commerce | Home</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script defer src="scripts/weather.js"></script>
+  <script defer src="scripts/spotlights.js"></script>
+</head>
+<body>
+
+  <!-- Header / Navigation (consistent across site) -->
+  <header>
+    <div class="header-content">
+      <h1>City Chamber of Commerce</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="images/hero.webp" alt="Downtown city view representing local commerce" />
+      <div class="hero-text">
+        <h2>Supporting Local Business. Building Community.</h2>
+        <a href="#" class="cta-button">Join the Chamber</a>
+      </div>
+    </section>
+
+    <!-- Main Grid Content -->
+    <section class="home-grid">
+
+      <!-- Events -->
+      <section class="events">
+        <h3>Current Events</h3>
+        <ul>
+          <li>📅 Business Networking Breakfast – March 14</li>
+          <li>🏗️ Downtown Development Forum – March 22</li>
+          <li>🎉 Spring Community Festival – April 5</li>
+        </ul>
+      </section>
+
+      <!-- Weather -->
+      <section class="weather">
+        <h3>Local Weather</h3>
+        <p id="current-temp"></p>
+        <p id="weather-desc"></p>
+        <div class="forecast">
+          <p id="day1"></p>
+          <p id="day2"></p>
+          <p id="day3"></p>
+        </div>
+      </section>
+
+      <!-- Spotlights -->
+      <section class="spotlights">
+        <h3>Business Spotlights</h3>
+        <div class="spotlight-container" id="spotlight-container"></div>
+      </section>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 City Chamber of Commerce | Derek Nielsen</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById('lastModified').textContent = document.lastModified;
+  </script>
+
+</body>
+</html>
