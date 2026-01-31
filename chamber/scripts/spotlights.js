@@ -1,12 +1,15 @@
 const spotlightContainer = document.getElementById("spotlight-container");
-const membersURL = "data/members.json"; // Update if your path is different
+const membersURL = "../data/members.json"; // go up from chambers/ to data/
 
 async function loadSpotlights() {
   try {
     const response = await fetch(membersURL);
-    if (!response.ok) throw Error(await response.text());
-    const data = await response.json();
+    if (!response.ok) throw Error("Failed to fetch members.json");
 
+    const data = await response.json(); // Define 'data' BEFORE using it
+    if (!data.members) throw Error("No members array in JSON");
+
+    // Filter qualified members
     const qualifiedMembers = data.members.filter(member =>
       member.membershipLevel === "Gold" || member.membershipLevel === "Silver"
     );
@@ -16,12 +19,13 @@ async function loadSpotlights() {
       return;
     }
 
-    // Randomize selection safely
+    // Randomly select 2-3 members
     const shuffled = qualifiedMembers.sort(() => 0.5 - Math.random());
     const selectedCount = Math.min(Math.floor(Math.random() * 2) + 2, qualifiedMembers.length);
     const selected = shuffled.slice(0, selectedCount);
 
     displaySpotlights(selected);
+
   } catch (error) {
     console.error("Spotlight error:", error);
     spotlightContainer.innerHTML = "<p>Error loading spotlights.</p>";
@@ -29,7 +33,8 @@ async function loadSpotlights() {
 }
 
 function displaySpotlights(members) {
-  spotlightContainer.innerHTML = ""; // Clear previous content
+  spotlightContainer.innerHTML = ""; // Clear container first
+
   members.forEach(member => {
     const card = document.createElement("section");
     card.classList.add("spotlight-card");
@@ -47,7 +52,8 @@ function displaySpotlights(members) {
   });
 }
 
-// Update last modified once
+// Update last modified
 document.getElementById("lastModified").textContent = document.lastModified;
 
+// Load the spotlights
 loadSpotlights();

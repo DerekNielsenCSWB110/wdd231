@@ -1,11 +1,12 @@
-[
+{
+  "members": [
   {
     "name": "Summit Tech",
     "address": "123 Mountain Rd",
     "phone": "555-123-4567",
     "website": "https://example.com",
     "image": "summit-tech.webp",
-    "membership": 3,
+    "membershipLevel": "Gold",
     "description": "Technology solutions for modern businesses."
   },
   {
@@ -14,7 +15,8 @@
     "phone": "555-987-6543",
     "website": "https://example.com",
     "image": "river-cafe.webp",
-    "membership": 2,
+    "membershipLevel": "Silver",
     "description": "Local café serving fresh food daily."
   }
 ]
+}

@@ -1,5 +1,5 @@
-const apiKey = "7ad8feca96a446109e221926262601";
-const city = "Boise";
+const apiKey = "25e7ad55e6d1599d13676af64af148d3";
+const city = "Los Angeles";
 const units = "imperial";
 
 const currentTemp = document.getElementById("current-temp");
