@@ -159,6 +159,7 @@ footer a:focus-visible {
    Media Queries
 -------------------- */
 @media (min-width: 700px) {
+  
   .hamburger {
     display: none;
   }

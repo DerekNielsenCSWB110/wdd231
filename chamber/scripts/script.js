@@ -2,10 +2,7 @@ function toggleMenu() {
   document.querySelector('nav').classList.toggle('open');
 }
 
-const hamburger = document.querySelector(".hamburger");
-hamburger.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
-});
+document.querySelector('.hamburger').addEventListener('click', toggleMenu);
 
 const navMenu = document.querySelector("nav ul");
 
