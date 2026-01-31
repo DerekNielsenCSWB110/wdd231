@@ -4,7 +4,6 @@ const units = "imperial";
 
 const currentTemp = document.getElementById("current-temp");
 const weatherDesc = document.getElementById("weather-desc");
-
 const day1 = document.getElementById("day1");
 const day2 = document.getElementById("day2");
 const day3 = document.getElementById("day3");
@@ -19,23 +18,27 @@ async function getWeather() {
 
     displayWeather(data);
   } catch (error) {
-    console.error(error);
+    console.error("Weather error:", error);
+    currentTemp.textContent = "Weather data unavailable";
+    weatherDesc.textContent = "";
+    day1.textContent = day2.textContent = day3.textContent = "N/A";
   }
 }
 
 function displayWeather(data) {
   const current = data.list[0];
-
-  currentTemp.innerHTML = `🌡️ Current: ${current.main.temp.toFixed(0)}°F`;
+  currentTemp.textContent = `🌡️ Current: ${current.main.temp.toFixed(0)}°F`;
   weatherDesc.textContent = current.weather[0].description;
 
   const forecastDays = data.list.filter(item => item.dt_txt.includes("12:00:00"));
 
-  day1.textContent = `Day 1: ${forecastDays[0].main.temp.toFixed(0)}°F`;
-  day2.textContent = `Day 2: ${forecastDays[1].main.temp.toFixed(0)}°F`;
-  day3.textContent = `Day 3: ${forecastDays[2].main.temp.toFixed(0)}°F`;
+  [day1, day2, day3].forEach((el, i) => {
+    if (forecastDays[i]) {
+      el.textContent = `Day ${i + 1}: ${forecastDays[i].main.temp.toFixed(0)}°F`;
+    } else {
+      el.textContent = `Day ${i + 1}: N/A`;
+    }
+  });
 }
-
-document.getElementById("lastModified").textContent = document.lastModified;
 
 getWeather();

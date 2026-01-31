@@ -26,3 +26,72 @@ nav ul {
   border: 1px solid #ccc;
   padding: 1rem;
 }
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 60vh; /* Adjust for desired hero height */
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  max-width: 90%;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    padding: 0;
+  }
+  nav ul.active {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #0056b3;
+}
+
+a:hover, a:focus {
+  color: #ff6600;
+}
+
+nav ul li a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #ff6600;
+}
+
+.cta-button {
+  background-color: #ff6600;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cta-button:hover {
+  background-color: #e65c00;
+}
