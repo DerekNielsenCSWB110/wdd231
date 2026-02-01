@@ -52,6 +52,18 @@ function displaySpotlights(members) {
   });
 }
 
+const logoUrl = member.logo || "images/default-logo.png"; // default image if missing
+
+card.innerHTML = `
+  <h4>${member.name}</h4>
+  <img src="${logoUrl}" alt="${member.name} logo" loading="lazy" />
+  <p>${member.address}</p>
+  <p>${member.phone}</p>
+  <p><strong>${member.membershipLevel} Member</strong></p>
+  <a href="${member.website}" target="_blank" rel="noopener">Visit Website</a>
+`;
+
+
 // Update last modified
 document.getElementById("lastModified").textContent = document.lastModified;
 

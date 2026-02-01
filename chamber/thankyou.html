@@ -43,6 +43,7 @@
   <script defer src="scripts/weather.js"></script>
   <script defer src="scripts/spotlights.js"></script>
   <script defer src="scripts/script.js"></script>
+  <script defer src="scripts/thankyou.js"></script>
 
 </head>
 <body>
@@ -64,50 +65,14 @@
     </ul>
   </nav>
 
-  <main>
+  <main class="thankyou">
+    <h1>Thank You for Joining!</h1>
+    <p>We appreciate your interest in our Chamber of Commerce.</p>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <img src="images/hero.webp" alt="Downtown city view representing local commerce" />
-      <div class="hero-text">
-        <h2>Supporting Local Business. Building Community.</h2>
-        <a href="#" class="cta-button">Join the Chamber</a>
-      </div>
+    <section class="submission-details">
+        <h2>Your Submission</h2>
+        <ul id="results"></ul>
     </section>
-
-    <!-- Main Grid Content -->
-    <section class="home-grid">
-
-      <!-- Events -->
-      <section class="events">
-        <h3>Current Events</h3>
-        <ul>
-          <li>📅 Business Networking Breakfast – March 14</li>
-          <li>🏗️ Downtown Development Forum – March 22</li>
-          <li>🎉 Spring Community Festival – April 5</li>
-        </ul>
-      </section>
-
-      <!-- Weather -->
-      <section class="weather">
-        <h3>Local Weather</h3>
-        <p id="current-temp"></p>
-        <p id="weather-desc"></p>
-        <div class="forecast">
-          <p id="day1"></p>
-          <p id="day2"></p>
-          <p id="day3"></p>
-        </div>
-      </section>
-
-      <!-- Spotlights -->
-      <section class="spotlights">
-        <h3>Business Spotlights</h3>
-        <div class="spotlight-container" id="spotlight-container"></div>
-      </section>
-
-    </section>
-
   </main>
 
   <!-- Footer -->

@@ -178,3 +178,35 @@ footer a:focus-visible {
     grid-column: 1 / -1;
   }
 }
+
+/* --------------------
+   Join Page Specific Styles
+-------------------- */
+ 
+.join-layout {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .join-layout {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.membership-cards .card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.membership-cards .card:nth-child(2) { animation-delay: 0.2s; }
+.membership-cards .card:nth-child(3) { animation-delay: 0.4s; }
+.membership-cards .card:nth-child(4) { animation-delay: 0.6s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
