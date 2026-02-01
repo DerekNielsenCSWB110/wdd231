@@ -35,7 +35,7 @@ header span {
    Navigation
 -------------------- */
 nav {
-  background-color: #c1121f; /* improved contrast */
+  background-color: #f51322; /* improved contrast */
 }
 
 nav ul {
@@ -182,7 +182,7 @@ footer a:focus-visible {
 /* --------------------
    Join Page Specific Styles
 -------------------- */
- 
+
 .join-layout {
   display: grid;
   gap: 2rem;
