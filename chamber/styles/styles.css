@@ -210,3 +210,22 @@ footer a:focus-visible {
     transform: translateY(0);
   }
 }
+
+.discover-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
