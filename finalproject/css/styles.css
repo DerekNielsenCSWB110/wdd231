@@ -1,5 +1,7 @@
+
+/* why do they make us import google fonts */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   background: #ffffff;
   color: #111111;
@@ -60,9 +62,8 @@ nav a.active {
   nav.open {
     display: flex;
   }
-  
+
   #menuBtn {
     display: block;
   }
 }
-
