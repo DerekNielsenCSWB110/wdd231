@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Form Submitted</title>
+<link rel="stylesheet" href="css/styles.css">
+<script type="module">
+const params = new URLSearchParams(window.location.search);
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("result").innerHTML = `
+    <h2>Thank You!</h2>
+    <p>Name: ${params.get("name")}</p>
+    <p>Email: ${params.get("email")}</p>
+    <p>Message: ${params.get("message")}</p>
+  `;
+});
+</script>
+</head>
+<body>
+<main id="result"></main>
+</body>
+</html>

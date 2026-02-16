@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+<link rel="stylesheet" href="css/styles.css">
+<script type="module" src="js/main.js" defer></script>
+</head>
+<body>
+
+<header>
+  <h1>Contact</h1>
+  <button id="menuBtn">☰</button>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="posts.html">Posts</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <form action="form-action.html" method="GET">
+    <label>Name
+      <input type="text" name="name" required>
+    </label>
+
+    <label>Email
+      <input type="email" name="email" required>
+    </label>
+
+    <label>Message
+      <textarea name="message" required></textarea>
+    </label>
+
+    <button type="submit">Send</button>
+  </form>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+[
+  { "id":1, "title":"Growth", "date":"2026-01-01", "category":"Faith", "content":"Growth takes effort." },
+  { "id":2, "title":"Focus", "date":"2026-01-02", "category":"Productivity", "content":"Discipline beats motivation." },
+  { "id":3, "title":"Gratitude", "date":"2026-01-03", "category":"Mindset", "content":"Be thankful daily." },
+  { "id":4, "title":"Service", "date":"2026-01-04", "category":"Faith", "content":"Serve others." },
+  { "id":5, "title":"Reflection", "date":"2026-01-05", "category":"Journal", "content":"Reflect weekly." },
+  { "id":6, "title":"Learning", "date":"2026-01-06", "category":"Education", "content":"Always improve." },
+  { "id":7, "title":"Courage", "date":"2026-01-07", "category":"Growth", "content":"Act despite fear." },
+  { "id":8, "title":"Balance", "date":"2026-01-08", "category":"Health", "content":"Rest matters." },
+  { "id":9, "title":"Purpose", "date":"2026-01-09", "category":"Life", "content":"Know your why." },
+  { "id":10, "title":"Patience", "date":"2026-01-10", "category":"Character", "content":"Trust timing." },
+  { "id":11, "title":"Discipline", "date":"2026-01-11", "category":"Productivity", "content":"Stay consistent." },
+  { "id":12, "title":"Hope", "date":"2026-01-12", "category":"Faith", "content":"Look forward." },
+  { "id":13, "title":"Strength", "date":"2026-01-13", "category":"Health", "content":"Train daily." },
+  { "id":14, "title":"Wisdom", "date":"2026-01-14", "category":"Learning", "content":"Seek understanding." },
+  { "id":15, "title":"Joy", "date":"2026-01-15", "category":"Mindset", "content":"Choose happiness." }
+]
